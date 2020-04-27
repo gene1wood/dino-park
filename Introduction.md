@@ -28,6 +28,9 @@ NodeJS:
   Search API
 - https://github.com/mozilla-iam/dino-park-tree \
   Org-chart API
+- https://github.com/mozilla-iam/dino-park-world \
+  Location API
+
 
 ### Libraries
 
