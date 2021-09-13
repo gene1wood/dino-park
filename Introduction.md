@@ -7,7 +7,8 @@ and point to the right places.
 
 ### Front-End
 
-https://github.com/mozilla-iam/dino-park-front-end
+- https://github.com/mozilla-iam/dino-park-front-end
+- https://github.com/mozilla-iam/dino-park-front-end-i18n
 
 ### Back-End
 
@@ -22,6 +23,10 @@ Rust:
   Verified Identities API
 - https://github.com/mozilla-iam/dino-park-packs \
   Access Groups Management API
+- https://github.com/mozilla-iam/dino-park-evo \
+  Legacy publisher for Access Groups
+- https://github.com/mozilla-iam/dino-park-cookie \
+  Cookie manager service
 
 NodeJS:
 - https://github.com/mozilla-iam/dino-park-search \
@@ -30,8 +35,9 @@ NodeJS:
   Org-chart API
 - https://github.com/mozilla-iam/dino-park-world \
   Location API
-
-
+- https://github.com/mozilla-iam/dino-park-profile-publisher \
+  Profile publisher service, the broker between DinoPark services (search service, orgchart service) and the CIS stack
+  
 ### Libraries
 
 Rust:
@@ -47,6 +53,16 @@ Rust:
   [proc macro] for easy route annotations to guard with trust levels
 - https://github.com/mozilla-iam/dino-park-oidc \
   Basic [OIDC] helper
+
+### Tools
+
+- https://github.com/mozilla-iam/dino-park-dev-tools \
+  helper tools for DinoPark development
+
+### Support
+
+- https://github.com/mozilla-iam/dino-park-issues \
+  Support repo containing GitHub Issues
 
 ## Infrastructure and 3rd Party Services
 
