@@ -104,18 +104,21 @@ https://app.swaggerhub.com/apis/fiji/dinoparkgroups/1.0.0-oas3#/default
 - **/groups/api/v1/sudo/curators/{groupName}** : POST : add a curator to a given group
 - **/groups/api/v1/sudo/user/{userUuid}** : DELETE : delete a user
 - **/groups/api/v1/sudo/user/inactive** : DELETE : delete inactive users
-- **/groups/api/v1/sudo/user/consolidate** : DELETE :
+- **/groups/api/v1/sudo/user/consolidate** : DELETE : send all group members to CIS to consolidate (note: this treats DinoPark as source of truth).
 - **/groups/api/v1/sudo/user/uuids/members** : GET : all member's UUIDs
 - **/groups/api/v1/sudo/user/uuids/staff** : GET : all staff's UUIDs
 - **/groups/api/v1/sudo/user/data/{userUuid}** : GET : all profile and group data for a given UUID
 - **/groups/api/v1/sudo/user/cis/{userUuid}** : POST : update CIS with a user's current groups
 - **/groups/api/v1/sudo/member/{groupName}** : POST : add member to group
 - **/groups/api/v1/sudo/member/{groupName}/{userUuid}** : DELETE : remove member from group
-- **/groups/api/v1/sudo/trust/groups/{groupName}** : PUT : 
+- **/groups/api/v1/sudo/trust/groups/{groupName}** : PUT : change the trust level of a group (e.g. from staff to nda) note that increasing the trust level will kick out members that don't have this trust level.
 - **/groups/api/v1/sudo/groups/inactive** : GET : list inactive groups
-- **/groups/api/v1/sudo/groups/inactive/{groupName}** : DELETE : delete inactive group
-- **/groups/api/v1/sudo/groups/reserve/{groupName}** : POST : 
-- **/groups/api/v1/sudo/transfer** : POST :
+- **/groups/api/v1/sudo/groups/inactive/{groupName}** : DELETE : delete inactive or reserved group
+- **/groups/api/v1/sudo/groups/reserve/{groupName}** : POST : reserves a group name for future use so it cannot be created
+- **/groups/api/v1/sudo/transfer** : POST : transfer access groups from user a to user b. This is used for offboarding staff or people that lost their account.
+- **/groups/api/v1/forms/email/** : GET : simple html form to send emails
+- **/groups/api/v1/forms/email/bcc** : POST : send email on behalf of DinoPark
+- **/groups/api/v1/forms/email/group** : POST : send email to a group
 
 ---
 
